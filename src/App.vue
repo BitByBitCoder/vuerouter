@@ -8,6 +8,9 @@ function back() {
 function foward() {
   router.back(1);
 }
+function redirect() {
+  router.push({ name: "home" });
+}
 </script>
 
 <template>
@@ -20,6 +23,7 @@ function foward() {
     </nav>
   </div>
   <br />
+  <button @click="redirect">home redirect</button>
   <button @click="back">back</button>
   <button @click="foward">foward</button>
 
