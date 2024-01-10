@@ -5,6 +5,9 @@ import router from "./router";
 function back() {
   router.back(-1);
 }
+function foward() {
+  router.back(1);
+}
 </script>
 
 <template>
@@ -18,6 +21,7 @@ function back() {
   </div>
   <br />
   <button @click="back">back</button>
+  <button @click="foward">foward</button>
 
   <RouterView />
 </template>
